@@ -14,15 +14,13 @@ the test contains use of different languages such as Node, serverless-offline, p
 
 
 ## Running Locally 🖥️
-
-1. Clone the repo or your fork.
-
 Back - End
-3. npm i, in the location  /muncherTest
-4. create database 
-5. npx prisma migrate dev // migrate information to the database
-6. sls offline
-7. take into account the configuration of the .env to connect to the database.
+1. Clone the repo or your fork.
+2. npm i, in the location  /muncherTest
+3. create database 
+4. npx prisma migrate dev // migrate information to the database
+5. sls offline
+6. take into account the configuration of the .env to connect to the database.
 
 
 
