@@ -2,6 +2,7 @@
 ## Test Muncher - Back End 🌞
 
 the test contains use of different languages such as Node, serverless-offline, prism, postgresSQL, javascript. 
+EXTRA: React
 
 
 ## Functionality 🔧
