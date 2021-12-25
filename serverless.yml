@@ -1,0 +1,51 @@
+org: danizagra
+app: muncher
+
+
+service: Muncher
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+
+plugins:
+  - serverless-offline
+
+functions:
+  userCreate:
+    handler: handler.userCreate
+    events:
+      - http:
+          method: post
+          path: userCreate
+
+  orderCreate:
+      handler: handler.orderCreate
+      events:
+      - http:
+          method: post
+          path: orderCreate
+
+  getAllUsers:
+      handler: handler.getAllUsers
+      events:
+      - http:
+          method: get
+          path: getAllUsers
+
+  getAllOrders:
+      handler: handler.getAllOrders
+      events:
+      - http:
+          method: get
+          path: getAllOrders
+
+  passMoney:
+      handler: handler.passMoney
+      events:
+      - http:
+          method: post
+          path: passMoney
